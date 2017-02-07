@@ -1,0 +1,29 @@
+.side {
+    width: 750rpx;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.side-user {
+    height: 200rpx;
+    width: 75%;
+    background-color: deepskyblue;
+}
+.home-menu {
+    width: 75%;
+    height: 40px;
+    font-size: 36rpx;
+    color: deepskyblue;
+    line-height: 40px;
+}
+.theme-list {
+    width: 75%;
+    height: 40px;
+    font-size: 36rpx;
+    line-height: 40px;
+}
+
+.c-state1{
+  transform: rotate(0deg) scale(1) translate(75%,0%); 
+  -webkit-transform: rotate(0deg) scale(1) translate(75%,0%); 
+}

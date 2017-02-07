@@ -1,0 +1,13 @@
+<view>
+    <view class="item-head">
+        <image class="head-banner" src="/images/3.jpg"></image>
+        <text class="head-title">{{content.title}}</text>
+    </view>
+    <view class="content-container">
+        <text class="content-title">{{title}}</text>
+        <view class="author">
+            <text>{{author}}</text>
+        </view>
+        <text class="content">{{article}}</text>
+    </view>
+</view>

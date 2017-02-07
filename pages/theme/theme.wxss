@@ -1,0 +1,17 @@
+page {
+    background-color: rgb(240,240,240);
+}
+.container {
+    margin: 20px 10px 10px 10px;
+}
+.theme-item {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgb(194,194,194);
+    margin-bottom: 10px;
+}
+.theme-item text {
+    padding: 10px 100px 10px 20px; 
+}

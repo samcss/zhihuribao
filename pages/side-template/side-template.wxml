@@ -1,0 +1,14 @@
+<template name="sideMenu">
+    <view class="side">
+       <view class="side-user">
+       </view>
+       <view class="home-menu" catchtap="onHomeTap">
+            <text>首页</text>
+       </view>
+       <block wx:for="{{theme_list}}">
+            <view class="theme-list" catchtap="onThemeTap" data-themeID="{{item.id}}">
+                <text>{{item.name}}</text>
+            </view> 
+       </block>  
+    </view>
+</template>

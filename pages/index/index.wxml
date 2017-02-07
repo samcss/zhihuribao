@@ -1,0 +1,45 @@
+<view>
+    <!--主页面-->
+    <view bindtouchmove="tap_drag" bindtouchend="tap_end" bindtouchstart="tap_start" class="main-page {{open ? 'c-state1' : ''}}">
+        <swiper indicator-dots="true" >
+            <block wx:for="{{topStories}}">
+                <swiper-item>
+                <image src="/images/2.jpg"></image>
+                <text class="top-title">{{item.title}}</text>
+                </swiper-item>
+            </block>
+        </swiper>
+
+        <!--新闻列表-->
+        <view class="news-container">
+                <text class="head">今日热闻</text>
+                <block wx:for="{{stories}}">
+                    <view class="news-item" catchtap="onNewsTap" data-newsID="{{item.id}}">
+                        <view class="news-title">
+                            <text>{{item.title}}</text>
+                        </view>
+                        <image class="news-image" src="/images/4.jpg"></image>
+                    </view>
+                </block>    
+        </view>
+        <view class="more" catchtap="onMoreTap">
+            <text>加载更多</text>
+            <image src="/images/down.png"></image>
+        </view>
+    </view>
+
+    <!--侧滑页面-->
+    <view class="side">
+       <view class="side-user">
+       </view>
+       <view class="home-menu" catchtap="onHomeTap">
+            <image src="/images/home.png"></image>
+            <text>首页</text>
+       </view>
+       <block wx:for="{{theme_list}}">
+            <view class="theme-list" catchtap="onThemeTap" data-themeID="{{item.id}}">
+                <text>{{item.name}}</text>
+            </view> 
+       </block>  
+    </view>
+</view>

@@ -1,0 +1,7 @@
+<view class="container">
+    <block wx:for="{{data_list}}">
+        <view class="theme-item" catchtap="onThemeTap" data-themeID="{{item.id}}">
+            <text>{{item.name}}</text>
+        </view> 
+    </block>   
+</view>

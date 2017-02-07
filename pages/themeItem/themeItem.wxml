@@ -1,0 +1,18 @@
+<view>
+    <view class="head-banner">
+        <image src="/images/2.jpg"></image>
+        <text class="top-title">{{themeDes}}</text>
+    </view>        
+
+    <!--主题列表-->
+    <view class="news-container">
+        <block wx:for="{{themeList}}">
+            <view class="news-item" catchtap="onThemeListTap" data-listID="{{item.id}}">
+                <view class="news-title">
+                    <text>{{item.title}}</text>
+                </view>
+                <image class="news-image" src="/images/4.jpg"></image>
+            </view>
+        </block>    
+    </view>
+</view>
